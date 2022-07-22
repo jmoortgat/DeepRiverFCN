@@ -8,7 +8,7 @@
 - rioxarray
 - geopandas
 
-To create the TensorFlow environment for training and inference please refer the file [environment.yml](https://github.com/Ziwei-0129/DeepRiverFCNNs/blob/main/environment.yml)
+To create the TensorFlow environment for training and inference please use the file [environment.yml](https://github.com/Ziwei-0129/DeepRiverFCNNs/blob/main/environment.yml)
 
 ### Running Our Codes
 
@@ -38,5 +38,4 @@ python inference_fcnn.py --checkpoint_path checkpoints/Panchromatic/U-Net/ResNet
 
 ### Acknowledgement
 
-Five FCNN architectures are implemented based on the [
-Segmentation_models](https://github.com/qubvel/segmentation_models) and [DeepWaterMap](https://github.com/isikdogan/deepwatermap).
+Five fully connected neural network architectures are implemented based on the [Segmentation_models](https://github.com/qubvel/segmentation_models) and [DeepWaterMap](https://github.com/isikdogan/deepwatermap).
