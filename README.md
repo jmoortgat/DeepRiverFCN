@@ -38,4 +38,4 @@ python inference_fcnn.py --checkpoint_path checkpoints/Panchromatic/U-Net/ResNet
 
 ### Acknowledgement
 
-Five fully connected neural network architectures are implemented based on the [Segmentation_models](https://github.com/qubvel/segmentation_models) and [DeepWaterMap](https://github.com/isikdogan/deepwatermap).
+Five fully convolutional neural network architectures are implemented based on the [Segmentation_models](https://github.com/qubvel/segmentation_models) and [DeepWaterMap](https://github.com/isikdogan/deepwatermap).
