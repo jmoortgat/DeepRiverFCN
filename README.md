@@ -38,10 +38,16 @@ python inference_fcnn.py --checkpoint_path checkpoints/Panchromatic/U-Net/ResNet
 
 ### Publication
 
-Full details of this work can be found in our paper "Deep Learning Models for River Classification at Sub-Meter Resolutions from Multispectral and Panchromatic Commercial Satellite Imagery", published in Remote Sensing of Environment, doi:10.1016/j.rse.2022.113279. Full citation:
+Full details of this work can be found in our paper: "Deep Learning Models for River Classification at Sub-Meter Resolutions from Multispectral and Panchromatic Commercial Satellite Imagery", published in Remote Sensing of Environment, doi:10.1016/j.rse.2022.113279. 
+Full citation:
 
-Moortgat, J., Li, Z., Durand, M., Howat, I., Yadav, B. and Dai, C., 2022. Deep learning models for river classification at sub-meter resolutions from multispectral and panchromatic commercial satellite imagery. Remote Sensing of Environment, 282, p.113279.
+Moortgat, J., Li, Z., Durand, M., Howat, I., Yadav, B. and Dai, C., 2022.    
+Deep learning models for river classification at sub-meter resolutions from multispectral and panchromatic commercial satellite imagery.    
+Remote Sensing of Environment, **282**, p.113279.   
+[paper url](https://www.sciencedirect.com/science/article/pii/S0034425722003856)
 
+
+```
 @article{moortgat2022deep,
   title={Deep learning models for river classification at sub-meter resolutions from multispectral and panchromatic commercial satellite imagery},
   author={Moortgat, Joachim and Li, Ziwei and Durand, Michael and Howat, Ian and Yadav, Bidhyananda and Dai, Chunli},
@@ -51,6 +57,7 @@ Moortgat, J., Li, Z., Durand, M., Howat, I., Yadav, B. and Dai, C., 2022. Deep l
   year={2022},
   publisher={Elsevier}
 }
+```
 
 ### Acknowledgement
 
