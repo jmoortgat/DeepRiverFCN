@@ -36,6 +36,22 @@ Our model checkpoints can be downloaded from [checkpoints](https://drive.google.
 python inference_fcnn.py --checkpoint_path checkpoints/Panchromatic/U-Net/ResNet18/cp.080.ckpt --input_path test_tiffimg_pan.tif --output_folder . --data_dim 1 --model_index 2 --downscale_factor 6 --mask_name mask_pan.tif
 ```
 
+### Publication
+
+Full details of this work can be found in our paper "Deep Learning Models for River Classification at Sub-Meter Resolutions from Multispectral and Panchromatic Commercial Satellite Imagery", published in Remote Sensing of Environment, doi:10.1016/j.rse.2022.113279. Full citation:
+
+Moortgat, J., Li, Z., Durand, M., Howat, I., Yadav, B. and Dai, C., 2022. Deep learning models for river classification at sub-meter resolutions from multispectral and panchromatic commercial satellite imagery. Remote Sensing of Environment, 282, p.113279.
+
+@article{moortgat2022deep,
+  title={Deep learning models for river classification at sub-meter resolutions from multispectral and panchromatic commercial satellite imagery},
+  author={Moortgat, Joachim and Li, Ziwei and Durand, Michael and Howat, Ian and Yadav, Bidhyananda and Dai, Chunli},
+  journal={Remote Sensing of Environment},
+  volume={282},
+  pages={113279},
+  year={2022},
+  publisher={Elsevier}
+}
+
 ### Acknowledgement
 
 Five fully convolutional neural network architectures are implemented based on the [Segmentation_models](https://github.com/qubvel/segmentation_models) and [DeepWaterMap](https://github.com/isikdogan/deepwatermap).
