@@ -1,0 +1,17 @@
+# Core deep-learning stack
+tensorflow>=2.4
+tf_keras            # Keras 2 compatibility shim, used automatically on TF >= 2.16
+segmentation-models==1.0.1
+
+# Geospatial I/O and processing
+rasterio
+xarray
+rioxarray
+geopandas
+tifffile
+opencv-python
+
+# General
+numpy
+pandas
+matplotlib

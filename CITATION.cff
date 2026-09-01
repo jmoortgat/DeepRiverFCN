@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the journal article below.
+title: "DeepRiverFCN: Arctic river segmentation with fully convolutional neural networks"
+type: software
+authors:
+  - family-names: Moortgat
+    given-names: Joachim
+    affiliation: "School of Earth Sciences, The Ohio State University"
+  - family-names: Li
+    given-names: Ziwei
+repository-code: "https://github.com/jmoortgat/DeepRiverFCN"
+license: MIT
+preferred-citation:
+  type: article
+  title: >-
+    Deep learning models for river classification at sub-meter resolutions
+    from multispectral and panchromatic commercial satellite imagery
+  authors:
+    - family-names: Moortgat
+      given-names: Joachim
+    - family-names: Li
+      given-names: Ziwei
+    - family-names: Durand
+      given-names: Michael
+    - family-names: Howat
+      given-names: Ian
+    - family-names: Yadav
+      given-names: Bidhyananda
+    - family-names: Dai
+      given-names: Chunli
+  journal: "Remote Sensing of Environment"
+  volume: 282
+  start: 113279
+  year: 2022
+  doi: 10.1016/j.rse.2022.113279

@@ -2,13 +2,17 @@ from __future__ import division
 import argparse
 import numpy as np
 import cv2, time, os, pickle, sys
+# Environment setup (must precede the tensorflow import):
+#  - TF_USE_LEGACY_KERAS: run Keras 2 behavior on TF >= 2.16 (requires the tf_keras package)
+#  - SM_FRAMEWORK: make segmentation_models use tf.keras
+os.environ.setdefault("TF_USE_LEGACY_KERAS", "1")
+os.environ.setdefault("SM_FRAMEWORK", "tf.keras")
 
 import rasterio
 from rasterio.enums import Resampling
 from copy import deepcopy
 import segmentation_models as sm
-import arcticrivermap4
-import arcticrivermappan
+import arcticrivermap
  
 import xarray as xr
 import tifffile as tiff
@@ -101,10 +105,8 @@ def main(args):
     # Load inference model 
     model = None
     try:
-        if args.model_index == 1 and args.data_dim == 4:
-            model = arcticrivermap4.model()
-        elif args.model_index == 1 and args.data_dim == 1:
-            model = arcticrivermappan.model()
+        if args.model_index == 1:
+            model = arcticrivermap.build_model(n_channels=args.data_dim)
         elif args.model_index == 2:
             model = sm.Unet(backbone_name='resnet18', input_shape=(None, None, args.data_dim), 
                                 encoder_weights=None, classes=1, activation='sigmoid')

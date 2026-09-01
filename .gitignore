@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.venv/
+venv/
+env/
+
+# Data and model artifacts
+*.tif
+*.tiff
+*.ckpt*
+checkpoints/*
+!checkpoints/README.md
+TensorFlowRecords/
+figs/
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/

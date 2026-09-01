@@ -1,12 +1,16 @@
 
 import os, glob
+# Environment setup (must precede the tensorflow import):
+#  - TF_USE_LEGACY_KERAS: run Keras 2 behavior on TF >= 2.16 (requires the tf_keras package)
+#  - SM_FRAMEWORK: make segmentation_models use tf.keras
+os.environ.setdefault("TF_USE_LEGACY_KERAS", "1")
+os.environ.setdefault("SM_FRAMEWORK", "tf.keras")
 import argparse
 import tensorflow as tf 
 from metrics import running_precision, running_recall, running_f1 
 import numpy as np
 import segmentation_models as sm
-import arcticrivermap4
-import arcticrivermappan
+import arcticrivermap
 import matplotlib.pyplot as plt
 
 
@@ -135,10 +139,8 @@ class TFModelTrainer:
  
         # Setup training Model
         try:
-            if self.model_index == 1 and self.data_dim == 4:
-                model = arcticrivermap4.model()
-            elif self.model_index == 1 and self.data_dim == 1:
-                model = arcticrivermappan.model()
+            if self.model_index == 1:
+                model = arcticrivermap.build_model(n_channels=self.data_dim)
             elif self.model_index == 2:
                 model = sm.Unet(backbone_name='resnet18', input_shape=(None, None, self.data_dim), 
                                     encoder_weights=None, classes=1, activation='sigmoid')
