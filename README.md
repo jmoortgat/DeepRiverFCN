@@ -66,10 +66,13 @@ python inference_fcnn.py \
 
 ## Trained checkpoints
 
-Checkpoints for all five architectures (panchromatic and multispectral) are
-available from
-[Google Drive](https://drive.google.com/drive/folders/1v5SMzqkjqHaC7YlimeY0exOFTsQ_onZU?usp=sharing);
-see [`checkpoints/README.md`](checkpoints/README.md).
+Checkpoints for all five architectures (panchromatic and multispectral,
+epoch 80) are attached to the
+[v1.1.0 release](https://github.com/jmoortgat/DeepRiverFCN/releases/tag/v1.1.0)
+(with the original
+[Google Drive](https://drive.google.com/drive/folders/1v5SMzqkjqHaC7YlimeY0exOFTsQ_onZU?usp=sharing)
+as a mirror); see [`checkpoints/README.md`](checkpoints/README.md) for the
+expected layout.
 
 ## Training data
 
